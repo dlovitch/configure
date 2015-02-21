@@ -1,6 +1,8 @@
 #!/bin/bash
 
-. general_functions.sh
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+. $DIR/general_functions.sh
 
 get_hwaddr() { # taken mostly from RedHat
     if [ -f /sys/class/net/${1}/address ]; then

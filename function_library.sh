@@ -15,5 +15,7 @@ SETCOLOR_WARNING="echo -en \\033[1;33m"
 SETCOLOR_NORMAL="echo -en \\033[0;39m"
 
 
-. general_functions.sh
-. network_functions.sh
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+. $DIR/general_functions.sh
+. $DIR/network_functions.sh
